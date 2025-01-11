@@ -1,5 +1,3 @@
-# Health-Chatbot
-This project is a health-focused chatbot designed to provide general information and respond to user queries. It leverages advanced natural language processing (NLP) techniques and an AI language model to process inputs and generate responses in real time.
 Health Chatbot: AI-Powered Conversational Assistant
 This project is a health-focused chatbot designed to provide general information and respond to user queries. It leverages advanced natural language processing (NLP) techniques and an AI language model to process inputs and generate responses in real time.
 
@@ -65,4 +63,40 @@ The main script that initializes the chatbot. Key components:
 OllamaLLM Class: Handles API requests to the Ollama server hosting the LLaMA model.
 Preprocessing Pipeline: Uses spaCy and NLTK for input tokenization and filtering.
 Chatbot Functionality: Processes user queries, sends them to the LLaMA model, and streams the responses back to the user.
-Gradio Interface: Provides a simple text input/output interface for users to interact with the
+Gradio Interface: Provides a simple text input/output interface for users to interact with the chatbot.
+Example Usage
+Run the chatbot, and you'll see a Gradio interface like this:
+makefile
+Copy code
+Title: Health Chatbot
+Description: Ask health-related questions.
+Type in a query like:
+sql
+Copy code
+What are the benefits of drinking water?
+The chatbot will process the query and return a response like:
+vbnet
+Copy code
+Staying hydrated is essential for overall health. It helps maintain body temperature, lubricates joints, and supports organ function.
+FAQ for Testing
+What is the role of spaCy in this project?
+SpaCy preprocesses user inputs by removing stopwords and tokenizing the text for better query quality.
+
+What does the chatbot do if the user input is empty?
+The chatbot returns an error message: "Error: No query provided."
+
+How does the chatbot handle incomplete responses?
+The chatbot uses streaming functionality to process partial responses and combines them until the "done" flag is true.
+
+What should I do if I see 'Error communicating with Ollama'?
+Ensure the Docker container hosting Ollama is running correctly and accessible at http://localhost:11434.
+
+How do I change the LLaMA model?
+Modify the model parameter in the OllamaLLM class initialization to the desired model name.
+
+Contributing
+Feel free to submit issues, fork the repo, and create pull requests for enhancements or bug fixes. Contributions are always welcome!
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
