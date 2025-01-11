@@ -2,7 +2,7 @@
 # Health Chatbot
 
 This project is a health chatbot application that leverages advanced natural language processing (NLP) techniques and the LLaMA 3.2 model via Ollama. The chatbot allows users to ask health-related questions and provides informative responses. Note that this chatbot is not a substitute for professional medical advice.
-Disclaimer: This chatbot is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of qualified healthcare professionals for your medical concerns.
+-Disclaimer: This chatbot is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of qualified healthcare professionals for your medical concerns.
 
 ## Features
 
